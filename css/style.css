@@ -1,1 +1,75 @@
+/* Configuração Global obrigatória */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Classes obrigatórias */
+.main-header {
+    background-color: #003366;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.nav-menu {
+    background-color: #00509e;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* ID obrigatório */
+#contato-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border: 2px solid #003366;
+    border-radius: 10px;
+}
+
+/* Estilo do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-enviar {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-enviar:hover {
+    background-color: #00509e;
+}
