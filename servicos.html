@@ -4,45 +4,35 @@
     <meta charset="UTF-8">
     <title>TechNova - Serviços</title>
     <style>
-        /* CSS Interno obrigatório */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-        header { background-color: #003366; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #00509e; padding: 10px; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        /* CSS Interno */
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; }
+        header { background: #003366; color: white; padding: 30px; text-align: center; }
+        nav { background: #00509e; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
         
-        .container { padding: 30px; max-width: 900px; margin: auto; }
-
-        /* Classe .card obrigatória com ajustes para as imagens */
+        .container { max-width: 1000px; margin: 30px auto; padding: 20px; }
+        
+        /* Classe .card obrigatória */
         .card { 
             background: white; 
             border: 1px solid #ddd; 
             padding: 20px; 
-            margin-bottom: 25px; 
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
+            margin-bottom: 20px; 
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
-
-        .card img { 
-            width: 100%; 
-            max-width: 400px; 
-            height: auto; 
-            border-radius: 5px; 
-            margin-bottom: 15px; 
-            border: 1px solid #eee;
-        }
-
+        .card img { width: 250px; border-radius: 5px; }
+        
+        /* Estilo da Tabela */
         table { width: 100%; border-collapse: collapse; margin-top: 30px; background: white; }
         th, td { border: 1px solid #003366; padding: 12px; text-align: left; }
-        th { background-color: #003366; color: white; }
+        th { background: #003366; color: white; }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Nossos Serviços</h1>
-    </header>
-
+    <header><h1>Serviços Ofertados</h1></header>
     <nav>
         <a href="index.html">Início</a>
         <a href="servicos.html">Serviços</a>
@@ -51,15 +41,19 @@
 
     <div class="container">
         <div class="card">
-            <img src="img/web.jpg" alt="Desenvolvimento Web">
-            <h3>Desenvolvimento Web</h3>
-            <p>Criação de sites modernos, responsivos e otimizados para o seu negócio.</p>
+            <img src="img/web.jpg" alt="Web">
+            <div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sistemas robustos e sites modernos.</p>
+            </div>
         </div>
 
         <div class="card">
-            <img src="img/consultoria.jpg" alt="Consultoria em TI">
-            <h3>Consultoria em TI</h3>
-            <p>Análise estratégica para melhorar a infraestrutura tecnológica da sua empresa.</p>
+            <img src="img/consultoria.jpg" alt="Consultoria">
+            <div>
+                <h3>Consultoria em TI</h3>
+                <p>Análise estratégica para a sua infraestrutura digital.</p>
+            </div>
         </div>
 
         <h2>Tabela de Preços</h2>
@@ -68,23 +62,22 @@
                 <tr>
                     <th>Serviço</th>
                     <th>Descrição</th>
-                    <th>Preço Estimado</th>
+                    <th>Preço</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Site Institucional</td>
-                    <td>Desenvolvimento completo (5 páginas)</td>
-                    <td>R$ 2.000,00</td>
+                    <td>Site com até 5 páginas</td>
+                    <td>R$ 1.500,00</td>
                 </tr>
                 <tr>
                     <td>Consultoria</td>
-                    <td>Hora técnica de análise</td>
-                    <td>R$ 150,00</td>
+                    <td>Hora técnica presencial</td>
+                    <td>R$ 200,00</td>
                 </tr>
             </tbody>
         </table>
     </div>
-
 </body>
 </html>
