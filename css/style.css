@@ -1,75 +1,39 @@
-/* Configuração Global obrigatória */
+/* Configuração Obrigatória */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-}
+body { font-family: Arial; background-color: #f4f4f4; }
 
-/* Classes obrigatórias */
+/* Classe 1 */
 .main-header {
     background-color: #003366;
     color: white;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
 }
 
-.nav-menu {
+/* Classe 2 */
+.nav-links {
     background-color: #00509e;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
+.nav-links a { color: white; text-decoration: none; margin: 0 15px; }
 
-/* ID obrigatório */
-#contato-container {
+/* ID Obrigatório */
+#contato-box {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 40px auto;
     background: white;
     padding: 30px;
-    border: 2px solid #003366;
+    border: 3px solid #003366;
     border-radius: 10px;
 }
 
-/* Estilo do Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-input, select, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.btn-enviar {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #003366;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.btn-enviar:hover {
-    background-color: #00509e;
-}
+form label { display: block; margin-top: 15px; font-weight: bold; }
+form input, form select, form textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; }
+.btn-send { width: 100%; padding: 15px; background: #003366; color: white; border: none; margin-top: 20px; cursor: pointer; }
